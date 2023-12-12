@@ -67,3 +67,39 @@ function addClassOnScroll() {
 
 // Attach the function to the scroll event
 window.onscroll = addClassOnScroll;
+
+
+// Function to update and render the timer
+function updateTimer() {
+  // Calculate minutes and seconds
+  var minutes = Math.floor(timerValue / 60);
+  var seconds = timerValue % 60;
+
+  // Display the timer in the specified element
+  document.getElementById('timer').textContent = padNumber(minutes) + ':' + padNumber(seconds);
+
+  // Check if the timer has reached 0
+  if (timerValue === 0) {
+      // Reset the timer to 15 minutes
+      timerValue = 900;
+      // Clear the stored timer value in localStorage
+      localStorage.removeItem('timerValue');
+      // You can add additional logic here when the timer reaches 0
+  } else {
+      // Decrease the timer value by 1 second
+      timerValue--;
+      // Store the current timer value in localStorage
+      localStorage.setItem('timerValue', timerValue);
+  }
+}
+
+// Function to pad single-digit numbers with a leading zero
+function padNumber(number) {
+  return (number < 10 ? '0' : '') + number;
+}
+
+// Retrieve the timer value from localStorage or set it to 15 minutes (900 seconds)
+var timerValue = parseInt(localStorage.getItem('timerValue')) || 900;
+
+// Update the timer every second
+var timerInterval = setInterval(updateTimer, 1000);
