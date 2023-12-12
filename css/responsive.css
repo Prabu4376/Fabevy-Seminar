@@ -1,0 +1,246 @@
+@media  (min-width: 320px)  and (max-width:567px){
+    .img-title img {
+        width: 50%;
+    }
+    .home-right {
+        padding: 10px;
+       font-size: 18px;
+    }
+    .closes h4,h5{
+        font-size: 16px;
+    }
+    .used{
+        padding: 0px;
+    }
+    .work-image img{
+        width: 80%;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    .sec-title h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: center;
+    }
+}
+@media (min-width:576px)  and (max-width:768px){
+.justify-content-between {
+    justify-content:center;
+    
+}
+@keyframes translateLeftToRight {
+    0% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes translateRightToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+  
+  .animation-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .left-to-right {
+    animation: translateLeftToRight 2s infinite alternate;
+  }
+  
+  .right-to-left {
+    animation: translateRightToLeft 2s infinite alternate;
+  }
+  .top_name{
+    top: 80px;
+  }
+  .sec-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+}
+}
+@media  (min-width: 320px)  and (max-width: 768px){
+.card-baner{
+        width: 100%;
+        font-size: 20px;
+    }
+    .break-title {
+        font-size: 18px;
+    }
+    .learn-right{
+        font-size: 27px;
+    }
+    .end-day{
+        font-size: 18px;
+    }
+    .top_name{
+        font-size: 40px;
+    }
+    .bottom_name{
+        font-size: 30px;
+    }
+    .sec-title{
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    .home-right_1 {
+        padding: 0px ;
+    }
+    .seminar_two_section{
+        margin-top: 20px;
+        padding: 20px 10px;
+    }
+    .our_business{
+        padding: 20px 10px;
+    }
+    .sec-title h2{
+        font-size: 25px;
+    }
+    .num {
+        /* width: 100%; */
+        font-size: 18px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .owl-title{
+        margin: 0px;
+    } 
+    .business-items{
+        padding-bottom: 22px;
+    }
+ 
+ 
+}
+
+@media only screen and (min-width: 992px)  and (max-width: 1200px){
+    @keyframes translateLeftToRight {
+        0% {
+          transform: translateX(-20px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes translateRightToLeft {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(20px);
+        }
+      }
+      
+      .animation-container {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      
+      .left-to-right {
+        animation: translateLeftToRight 2s infinite alternate;
+      }
+      
+      .right-to-left {
+        animation: translateRightToLeft 2s infinite alternate;
+      }
+      .top_name{
+        top: 60px;
+        font-size: 30px;
+      }
+}
+
+
+
+/* laal_section */
+
+@media(max-width:767px){
+    .mar-bus{
+        margin-bottom: 25px;
+    }
+    .sec-title {
+        padding: 20px 0px;
+    }
+
+    .Back-row {
+        /* margin: 7px; */
+        padding: 15px;
+    }
+   
+    .cards {
+        margin-right:0px;     
+    }
+
+    .coach-sec{
+        display: block;
+        width: 100%;
+        min-height: 280px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .coach-sec .coach-img{
+        width:150px;
+        margin: auto;
+    }
+    .coach-sec .coach-img img{
+        top: -100px;
+    }
+
+    .coach-sec .coach-conyant{
+        position: relative;
+        top: -70px;
+    }
+    .img-title {
+        margin-top: 0px;
+    }
+    h2{
+        margin-bottom: 0px;
+    }
+}   
+
+@media(min-width:767px) and (max-width:991px){
+    .coach-sec{
+        width: 74%;
+    }
+    .img-title {
+        margin-top: 15px;
+    }
+    .mar-bus {
+        margin-bottom: 25px;
+    }
+}
+
+@media(min-width:1020px){
+    .all{
+        padding: 40px 0px;
+    }
+    .mar-bus{
+        margin-bottom: 25px;
+    }
+    .sec-title h2{
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.4em;
+        text-align: center;
+    }
+    /* .cards {
+        margin: 0px 15px 30px 0px;
+    } */
+    .img-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
